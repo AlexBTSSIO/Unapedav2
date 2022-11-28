@@ -71,6 +71,7 @@ header h1{
 header img{
     width: 615px;
     height: 438px;
+    margin: auto 20rem;
 }
 header video{
     background-color: #222;
