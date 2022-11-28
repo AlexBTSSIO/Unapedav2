@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+body{
+    font: 1.6rem sans-serif; 
+    font-family: 'Roboto', sans-serif;
+    font-size: large;
+    letter-spacing: 1px;
+    margin: 0;
+    line-height: 1.6;
+    background-color: #fff;
+}
+h1,h2,h3,h4,ul,ol,p{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+img{
+    display: inline-block;
+    object-fit: cover;
+    vertical-align: middle;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+button{
+    border-style: none;
+}
+a {
+    text-decoration: none;
+    text-transform: none;
+    color: #fff;
+
+}
+:root{
+    --color-theme-d: #000;
+    --colors-theme-b: #2b2a33;
+    --colors-theme-g: #03045e;
+    --colors-theme-s: #0c95df;
+    --colors-theme-c: #caf0f8;
+    --colors-theme-p: #42414d;
+    --bgc-hover: #DFE6E9;
+    --color-blanc: #fff;
+    --color-footer:#2480F2;
+}
+
+/* theme */
+
+h1,h2,h3{
+    font-family: 'Arial', sans-serif;
+    font-weight:800;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+header h1{
+    line-height: 5.0rem;
+    text-align: center;
+    font-size: 2rem;
+    color: var(--color-theme-d);
+    background-color: var(--colors-theme-s);
+}
+header img{
+    display: block; 
+    width: calc(100% / 3);
+}
+
+nav{
+    color: var(--color-theme-d);
+    background-color: var(--colors-theme-s);
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    cursor: pointer;
+}
+
+nav ul{
+    width: 100rem;
+    margin:0 auto;
+    font-size: 0;
+}
+
+nav ul li{
+    display: inline-block;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    width: calc(100% / 8.2);
+}
+
+nav ul li a{
+    display: block;
+    text-align: center;
+    line-height: 4rem;
+    
+}
+nav li:hover{
+    background-color: var(--colors-theme-p);
+}
+
+input[type=text] {
+    height: 2.5rem;
+    position: absolute;
+    top: 0.25rem;
+    right: 20px;
+    font-size: 1.6 rem;
+} 
+button{
+    position:absolute;
+     /* bottom: 1rem; */
+    right: 5rem; 
+    background-color: #1C5AEB;
+    color: #fff;
+    text-align: center; 
+     /* width:  20rem;  */
+    line-height: 3.5rem;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+}
+main .content{
+    margin-top: 1rem;
+}
+main .content{
+   
+    padding: 5rem 5rem ;
+    display: block;
+}
+main .more{
+    margin: 0 5rem 5rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 100px;
+}
+section{
+    display: inline-block;
+    width: 100%;
+    color: #fff;
+    position: relative;
+    border-radius: 1rem;
+    margin: 1rem 0  ;
+    text-align: center;
+}
+main .more section h3{
+    background-color: #000;
+}
+
+#reseau{
+    background-color: #3681D1;
+}
+section:nth-of-type(2){
+    background-color:#1994DB ;
+}
+section:nth-of-type(3){
+    background-color:#3681D1;
+}
+section:nth-of-type(4){
+    background-color:#1C5AEB ;
+}
+#association{
+    background-color:#1994DB;
+}
+section:nth-of-type(6){
+    background-color:#0D5CD6 ;
+}
+section h3{
+    font-weight:400;
+    text-align: center;
+    position: relative;
+    padding: 2rem;
+    
+}
+
+
+.content section ul, .more section ul{
+    font-weight:400;
+    padding: 0;
+    background-color: inherit;
+    margin: 10px 0;
+    border-radius: 20px;
+}
+
+.content section ul li, .more section ul li{
+    padding: 1.5rem;
+    font-size:400;
+    background-color: inherit; 
+}
+.content section ul li:last-of-type{
+    margin-bottom: 1.6rem;
+} 
+
+ .content section .material-symbols-outlined{
+    font-size: 9rem;
+    bottom: 1rem;
+    right:1rem;
+    vertical-align: middle;
+    
+    line-height: 1.5rem;
+   
+}  
+section ul li:hover{
+   
+   background-color: var(--colors-theme-p);
+}
+.content section h3 button{
+    background-color: transparent;
+    color: #fff;
+    position: absolute;
+    transform: rotate(-90deg);
+    right: 0;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+}
+.content section h3 button:hover{
+    cursor: pointer;
+}
+#ul_1,#ul_2,#ul_3,#ul_4{
+    display: none;
+}
+
+footer{
+    text-align: center;
+    background-color: #222;
+    color: #fff;
+    font-size: larger;
+}
+footer ul li{
+    display: inline-block;
+    width: calc(100% / 3.5);
+   
+}
